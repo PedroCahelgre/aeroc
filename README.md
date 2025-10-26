@@ -1,141 +1,162 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 🍕 Aero Pizza - Sistema de Pizzaria
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+Um sistema completo de pizzaria desenvolvido com tecnologias modernas, oferecendo uma experiência completa para gestão de pedidos, cardápio digital e área administrativa.
 
-## ✨ Technology Stack
+## ✨ Funcionalidades
 
-This scaffold provides a robust foundation built with:
+### 👥 Para Clientes
+- **📱 Cardápio Digital** - Navegação intuitiva pelos produtos com imagens e descrições
+- **🛒 Carrinho de Compras** - Adicionar/remover produtos com quantidades
+- **📋 Sistema de Pedidos** - Fazer pedidos online com diferentes formas de pagamento
+- **📍 Delivery e Retirada** - Opções flexíveis de entrega
+- **⏰ Acompanhamento em Tempo Real** - Status do pedido via Socket.IO
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 👨‍💼 Para Administradores
+- **📊 Dashboard Completo** - Métricas e estatísticas em tempo real
+- **🛍️ Gestão de Produtos** - CRUD completo com upload de imagens
+- **👥 Gerenciamento de Usuários** - Controle de clientes e administradores
+- **📈 Relatórios Avançados** - Analytics e relatórios financeiros
+- **🔔 Notificações** - Sistema de notificações via WhatsApp/SMS
+- **⚙️ Configurações do Sistema** - Personalização e backup
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+## 🛠️ Stack Tecnológico
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+### 🎯 Frontend
+- **⚡ Next.js 15** - Framework React com App Router
+- **📘 TypeScript 5** - Tipagem estática para maior confiabilidade
+- **🎨 Tailwind CSS 4** - Framework CSS utilitário
+- **🧩 shadcn/ui** - Componentes acessíveis baseados em Radix UI
+- **🌈 Framer Motion** - Animações fluidas e interativas
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+### 🔧 Backend & Database
+- **🗄️ Prisma ORM** - Gerenciamento de banco de dados type-safe
+- **🗃️ SQLite** - Banco de dados local para desenvolvimento
+- **🔐 NextAuth.js** - Sistema de autenticação completo
+- **📡 Socket.IO** - Comunicação em tempo real
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+### 📱 UI/UX
+- **🎯 Lucide React** - Biblioteca de ícones consistente
+- **🌙 Next Themes** - Suporte a modo escuro/claro
+- **📊 Recharts** - Visualizações de dados
+- **🖱️ DND Kit** - Drag and drop moderno
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+## 🚀 Instalação e Uso
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+### Pré-requisitos
+- Node.js 18+
+- npm ou yarn
 
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
-
-## 🚀 Quick Start
+### Instalação
 
 ```bash
-# Install dependencies
+# Clone o repositório
+git clone https://github.com/PedroCahelgre/aeroc.git
+cd aeroc
+
+# Instale as dependências
 npm install
 
-# Start development server
+# Configure o banco de dados
+npx prisma generate
+
+# Execute o servidor de desenvolvimento
 npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação.
 
-## 🤖 Powered by Z.ai
+### Scripts Disponíveis
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+```bash
+# Desenvolvimento
+npm run dev          # Servidor de desenvolvimento com hot reload
+npm run build        # Build para produção
+npm run start        # Servidor de produção
+npm run lint         # Verificação de código
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+# Banco de dados
+npm run db:push      # Sincroniza schema com banco
+npm run db:generate  # Gera cliente Prisma
+npm run db:migrate   # Migrações de banco
+npm run db:reset     # Reset completo do banco
 ```
 
-## 🎨 Available Features & Components
+## 📁 Estrutura do Projeto
 
-This scaffold includes a comprehensive set of modern web development tools:
+```
+├── src/
+│   ├── app/                 # Páginas Next.js (App Router)
+│   │   ├── admin/          # Área administrativa
+│   │   ├── api/            # API routes
+│   │   ├── cardapio/       # Cardápio público
+│   │   └── login-admin/    # Login administrativo
+│   ├── components/         # Componentes React reutilizáveis
+│   │   ├── admin/         # Componentes administrativos
+│   │   └── ui/            # Componentes base (shadcn/ui)
+│   ├── hooks/             # Hooks personalizados
+│   └── lib/               # Utilitários e configurações
+├── prisma/                # Schema e migrações do banco
+├── public/                # Assets estáticos (imagens, etc.)
+└── scripts/               # Scripts utilitários
+```
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+## 🔧 Configuração
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+1. **Variáveis de Ambiente**
+   - Copie `.env.example` para `.env`
+   - Configure `DATABASE_URL` para seu banco de dados
+   - Adicione outras variáveis conforme necessário
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+2. **Banco de Dados**
+   - Execute `npx prisma db push` para criar as tabelas
+   - Execute `npx prisma generate` para gerar o cliente
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+3. **Administrador Inicial**
+   - Acesse `/login-admin` para criar o primeiro administrador
+   - Use a rota `/api/init-admins` para inicializar admins via API
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+## 🌟 Principais Features
 
-## 🤝 Get Started with Z.ai
+### 🍕 Cardápio Interativo
+- Categorias organizadas
+- Busca e filtros
+- Imagens de alta qualidade
+- Descrições detalhadas
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+### 📦 Sistema de Pedidos
+- Carrinho persistente
+- Múltiplas formas de pagamento (PIX, cartão, dinheiro)
+- Agendamento de pedidos
+- Histórico completo
+
+### 🔄 Tempo Real
+- Status dos pedidos via WebSocket
+- Notificações push
+- Dashboard administrativo atualizado automaticamente
+
+### 📱 Responsivo
+- Design mobile-first
+- Interface adaptável
+- Touch-friendly
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 🆘 Suporte
+
+Para suporte e dúvidas:
+- Abra uma issue no GitHub
+- Entre em contato com a equipe de desenvolvimento
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+**Aero Pizza** - Sabor que voa até sua casa! 🚀🍕
