@@ -1,0 +1,198 @@
+/* Melhorias de contraste para interface admin */
+
+/* Cores de texto com alto contraste */
+.text-high-contrast {
+  color: #ffffff !important;
+}
+
+.text-medium-contrast {
+  color: #e5e5e5 !important;
+}
+
+.text-muted-contrast {
+  color: #a3a3a3 !important;
+}
+
+/* Fundos com melhor contraste */
+.bg-high-contrast {
+  background-color: #0a0a0a !important;
+}
+
+.bg-medium-contrast {
+  background-color: #1a1a1a !important;
+}
+
+.bg-card-contrast {
+  background-color: #262626 !important;
+}
+
+/* Borders com melhor visibilidade */
+.border-contrast {
+  border-color: #404040 !important;
+}
+
+/* Hover states com melhor contraste */
+.hover-contrast:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Inputs com melhor contraste */
+.input-contrast {
+  background-color: #1a1a1a !important;
+  border-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.input-contrast::placeholder {
+  color: #8b8b8b !important;
+}
+
+.input-contrast:focus {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2) !important;
+}
+
+/* Botões com melhor contraste */
+.btn-contrast {
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.btn-contrast:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Cards com melhor contraste */
+.card-contrast {
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+}
+
+/* Textos específicos */
+.title-contrast {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.subtitle-contrast {
+  color: #d4d4d4 !important;
+}
+
+.label-contrast {
+  color: #a3a3a3 !important;
+}
+
+.value-contrast {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* Status indicators */
+.status-online {
+  color: #10b981 !important;
+}
+
+.status-offline {
+  color: #ef4444 !important;
+}
+
+.status-pending {
+  color: #f59e0b !important;
+}
+
+/* Links */
+.link-contrast {
+  color: #fbbf24 !important;
+}
+
+.link-contrast:hover {
+  color: #f59e0b !important;
+}
+
+/* Badges */
+.badge-success {
+  background-color: #065f46 !important;
+  color: #10b981 !important;
+}
+
+.badge-warning {
+  background-color: #713f12 !important;
+  color: #f59e0b !important;
+}
+
+.badge-error {
+  background-color: #7f1d1d !important;
+  color: #ef4444 !important;
+}
+
+.badge-info {
+  background-color: #1e3a8a !important;
+  color: #3b82f6 !important;
+}
+
+/* Scrollbar customizada */
+.scrollbar-contrast::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-contrast::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.scrollbar-contrast::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+.scrollbar-contrast::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+/* Tabelas */
+.table-header-contrast {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+.table-row-contrast:nth-child(even) {
+  background-color: #262626 !important;
+}
+
+.table-row-contrast:hover {
+  background-color: #333333 !important;
+}
+
+/* Modal */
+.modal-contrast {
+  background-color: #1a1a1a !important;
+  border-color: #404040 !important;
+}
+
+/* Dropdown */
+.dropdown-contrast {
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+}
+
+.dropdown-item-contrast:hover {
+  background-color: #333333 !important;
+}
+
+/* Loading states */
+.loading-contrast {
+  color: #fbbf24 !important;
+}
+
+/* Error states */
+.error-contrast {
+  color: #ef4444 !important;
+}
+
+/* Success states */
+.success-contrast {
+  color: #10b981 !important;
+}
